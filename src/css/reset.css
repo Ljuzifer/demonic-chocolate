@@ -11,10 +11,14 @@ p {
 
 body {
   margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+
+  scroll-behavior: smooth;
 }
-/* p:last-child {
-  margin-bottom: 0;
-} */
 
 ul {
   margin: 0;
@@ -35,4 +39,27 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  outline: 1px solid green;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
