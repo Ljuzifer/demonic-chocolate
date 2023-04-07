@@ -15,7 +15,7 @@
 }
 
 .moovie {
-    max-width: 335px;
+    max-width: 100%;
     height: 500px;
     margin: 0 0 20px;
     padding: 0;
@@ -33,9 +33,61 @@
     border-radius: 15px;
 }
 
+.recipe-call {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+
+    margin-bottom: 20px;
+}
+
+.formula-item {
+    font-weight: 400;
+    line-height: 1.29;
+}
+
+.formula-chapter:not(:last-child) {
+    margin-bottom: 18px;
+}
+
 ul.formula {
     list-style: disc;
     margin-left: 20px;
     /* background: var(--background-list-color); */
     /* border: 1px solid var(--border-list-color); */
+}
+
+@media screen and (min-width: 768px) {
+    .moovie {
+    max-width: 100%;
+    height: 400px;
+    }
+
+    .recipe-call {
+        margin-bottom: 28px;
+    }
+
+    .recipe {
+        padding: 32px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .moovie {
+        width: 600px;
+        margin: 0 20px 0 0;
+    }
+
+    .thumb .method {
+        display: flex;
+    }
+
+    .recipe {
+        width: 514px;
+        height: 400px;
+    }
+
+    .formula-chapter:not(:last-child) {
+    margin-bottom: 24px;
+    }
 }
