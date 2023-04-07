@@ -37,6 +37,7 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 1.33;
+    letter-spacing: normal;
 
     margin-bottom: 20px;
 }
@@ -44,17 +45,29 @@
 .formula-item {
     font-weight: 400;
     line-height: 1.29;
+    letter-spacing: -0.02em;
 }
 
 .formula-chapter:not(:last-child) {
     margin-bottom: 18px;
 }
 
-ul.formula {
-    list-style: disc;
-    margin-left: 20px;
-    /* background: var(--background-list-color); */
-    /* border: 1px solid var(--border-list-color); */
+.formula-chapter {
+    position: relative;
+    margin-left: 16px;
+}
+
+.formula-chapter::before {
+    content: ' ';
+    position: absolute;
+    display: block;
+    top: 5px;
+    left: -16px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid var(--border-list-color);
+    background-color: var(--background-list-color);
 }
 
 @media screen and (min-width: 768px) {
