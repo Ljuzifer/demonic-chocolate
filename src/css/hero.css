@@ -1,1 +1,135 @@
 /* Hero */
+/* .container {
+    padding-left: 0px;
+    padding-right: 0px;
+} */
+
+/* .thumb .container {
+    margin: 0 20px;
+} */
+
+.hero {
+    padding-top: 395px;
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    text-align: left;
+    border-radius: 30px;
+    background-color: var(--background-third-color);
+}
+
+.overlay {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+        url(../img/hero/bg-mobile-1x.jpg);
+}
+
+.hero-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    color: var(--text-third-color);
+    margin-bottom: 32px;
+}
+
+.hero-button {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* text-align: left; */
+}
+
+.hero-button-buy-now {
+    /* display: flex;
+    flex-direction: row;
+    align-items: flex-start; */
+    align-items: center;
+    text-align: center;
+    /* padding: 12px 28px; */
+    gap: 14px;
+    width: 120px;
+    height: 41px;
+    background: var(--accent-main-color);
+    border-radius: 100px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21px;
+    cursor: pointer;
+    color: var(--background-third-color);
+    margin-right: 14px;
+}
+
+.hero-button-how-it’s-made {
+    gap: 14px;
+    width: 159px;
+    height: 41px;
+    border: 1px solid var(--text-third-color);
+    border-radius: 100px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+.hero-scroll-down {
+    width: 107px;
+    /* height: 41px; */
+    margin-top: 32px;
+    /* margin-left: 20px; */
+    margin-bottom: 20px;
+    /* text-align: left; */
+    margin-right: 12px;
+}
+
+.hero-scroll-down-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    color: var(--text-third-color);
+    /* text-align: left; */
+}
+
+.hero-button-scroll-down {
+    margin-left: 12px;
+    
+}
+ 
+/* Mobile */
+@media screen and (max-width: 374px) {
+    .container {
+        width: 100vw;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .container {
+        width: 375px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .thumb .container {
+        margin-bottom: 72px;
+    }
+}
