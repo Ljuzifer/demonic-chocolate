@@ -11,7 +11,7 @@
   margin-bottom: 50px;
 }
 .products-header-accent {
-  color: #fd9222;
+  color: var(--text-second-color);
 }
 .products-list {
   display: flex;
@@ -31,7 +31,7 @@
   padding-right: 20px;
   flex-shrink: 0;
   margin-bottom: 20px;
-  background-color: white;
+  background-color: var(--background-third-color);
 }
 .products-image {
   max-height: 201px;
@@ -67,7 +67,7 @@
   font-size: 14px;
   line-height: 1.2;
   padding: 8px 20px;
-  background-color: #fafafa;
+  background-color: var(--background-main-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
   text-transform: uppercase;
