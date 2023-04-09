@@ -1,11 +1,8 @@
 /* Subscribe */
 
 .subscribe {
-  max-width: 1200px;
-  padding-top: 62px;
-  padding-bottom: 63px;
-  margin-left: auto;
-  margin-right: auto;
+    padding-top: 62px;
+    padding-bottom: 63px;
 
   background-image: url(../img/subscribe/subscribe-mobile-1x.jpg);
   background-repeat: no-repeat;
@@ -52,14 +49,24 @@
 }
 
 .subscribe-button {
-  padding: 12px 28px;
-  border: 0;
-  border-radius: 100px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 100px;
 
-  background-color: var(--accent-main-color);
-  color: var(--text-third-color);
-  font-weight: 600;
-  line-height: 1.21;
+    background-color: var(--accent-main-color);
+    color: var(--text-third-color);
+    font-weight: 600;
+    line-height: 1.21;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+    color: var(--text-second-color);
+    background-color: var(--accent-second-color);
 }
 
 @media screen and (min-width: 768px) {
