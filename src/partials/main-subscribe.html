@@ -9,18 +9,19 @@
         each piece is a work of art that is sure to please.
       </p>
     </div>
-    <button type="button" class="subscribe-button">Subscribe</button>
+    <button type="button" sub-modal-open class="subscribe-button">Subscribe</button>
   </div>
 </section>
 
 <!-- Subscribe modal -->
-<div class="subscribe-backdrop">
+<div class="subscribe-backdrop is-hidden" sub-modal>
   <div class="subscribe-modal">
-    <button type="button" class="subscribe-modal-close-btn">
+    <button type="button" sub-modal-close class="subscribe-modal-close-btn">
       <svg class="subscribe-modal-close-btn-icon" width="24" height="24">
         <use href="../img/symbol-defs.svg#x"></use>
       </svg>
     </button>
+<<<<<<< Updated upstream
     <h2 class="subscribe-modal-title">
       Explore our <span> &nbsp;new chocolate&nbsp;</span> first!
     </h2>
@@ -38,6 +39,28 @@
         <button class="subscribe-button" type="submit">Submit</button>
       </div>
     </form>
+=======
+    <div class="subscribe-modal-aside">
+      <h2 class="subscribe-modal-title">
+        Explore our <span>new chocolate&nbsp;</span> first!
+      </h2>
+      <form class="subscribe-modal-form">
+        <div class="subscribe-modal-wrap">
+          <input
+            type="email"
+            autocomplete="off"
+            aria-label="E-mail"
+            class="subscribe-modal-input"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button class="subscribe-modal-btn" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+>>>>>>> Stashed changes
   </div>
 </div>
+
 <!-- /Subscribe modal -->
