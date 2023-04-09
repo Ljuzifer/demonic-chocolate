@@ -1,23 +1,10 @@
 /* Hero */
-/* .overlay {
-    border-radius: 30px;
-} */
-
-.container.overlay {
-    height: 620px;
-    padding-top: 395px;
-    /* max-width: 100%; */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    align-items: center;
-    text-align: left;
-    /* border-radius: 30px; */
-    /* background-color: var(--background-third-color); */
-}
-
-
 
 .overlay {
+    min-height: 620px;
+    padding: 395px 20px 20px;
+    max-width: 335px;
+    text-align: left;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -49,12 +36,12 @@
 .hero-button {
     display: flex;
     flex-wrap: wrap;
+    /* justify-content: space-between; */
 }
 
 .hero-button-buy-now {
-    align-items: center;
-    text-align: center;
-    gap: 14px;
+    /* align-items: center;
+    text-align: center; */
     min-width: 120px;
     height: 41px;
     background-color: var(--accent-main-color);
@@ -67,7 +54,7 @@
 }
 
 .hero-button-how-its-made {
-    gap: 14px;
+    
     min-width: 159px;
     height: 41px;
     border: 1px solid var(--text-third-color);
@@ -83,11 +70,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    align-content: center;
-    min-width: 100%;
+    /* align-content: center; */
+    /* min-width: 100%; */
     margin-top: 32px;
     margin-bottom: 20px;
-    margin-right: 12px;
+    /* margin-right: 12px; */
     /* margin-top: auto;
     margin-bottom: auto; */
 }
@@ -129,10 +116,44 @@
 }
  
 /* Mobile */
-@media screen and (max-width: 374px) {
-    
+
+/* Tablet */
+
+@media screen and (min-width: 767px) {
+    .overlay {
+        max-width: 704px;
+        min-height: 890px;
+        padding: 671px 40px 40px;
+    }
+
     .hero-title {
-        max-width: 100%;
+        max-width: 484px;
+        font-size: 28px;
+        line-height: 1.21;
+    }
+
+    .hero-button {
+        flex-wrap: nowrap;
+    }
+
+    .hero-scroll-down {
+        margin: 7px 0 0;
+    }
+
+    .hero-button-how-its-made {
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .overlay {
+        max-width: 1136px;
+        min-height: 600px;
+        padding-top: 381px;
+    }
+
+    .hero-button-how-its-made {
+        margin-right: auto;
     }
 }
 
