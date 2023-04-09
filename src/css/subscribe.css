@@ -1,119 +1,209 @@
 /* Subscribe */
 
 .subscribe {
-    max-width: 1200px;
-    padding-top: 62px;
-    padding-bottom: 63px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1200px;
+  padding-top: 62px;
+  padding-bottom: 63px;
+  margin-left: auto;
+  margin-right: auto;
 
-    background-image: url(../img/subscribe/subscribe-mobile-1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: var(--background-second-color);
-    text-align: center;
+  background-image: url(../img/subscribe/subscribe-mobile-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--background-second-color);
+  text-align: center;
 }
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .subscribe {
-        background-image: url(../img/subscribe/subscribe-mobile-2x.jpg);
-    }
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .subscribe {
+    background-image: url(../img/subscribe/subscribe-mobile-2x.jpg);
+  }
 }
 
 .subscribe-content {
-    text-align: center;
+  text-align: center;
 
-    color: var(--text-third-color);
+  color: var(--text-third-color);
 }
 
 .subscribe-title {
-    max-width: 291px;
-    margin-bottom: 24px;
-    margin-right: auto;
-    margin-left: auto;
+  max-width: 291px;
+  margin-bottom: 24px;
+  margin-right: auto;
+  margin-left: auto;
 
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: -0.03em;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
 }
 
 .subscribe-description {
-    max-width: 326px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 24px;
+  max-width: 326px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 24px;
 
-    line-height: 1.28;
-    letter-spacing: -0.02em;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
 }
 
 .subscribe-button {
-    padding: 12px 28px;
-    border: 0;
-    border-radius: 100px;
+  padding: 12px 28px;
+  border: 0;
+  border-radius: 100px;
 
-    background-color: var(--accent-main-color);
-    color: var(--text-third-color);
-    font-weight: 600;
-    line-height: 1.21;
+  background-color: var(--accent-main-color);
+  color: var(--text-third-color);
+  font-weight: 600;
+  line-height: 1.21;
 }
 
 @media screen and (min-width: 768px) {
-    .subscribe {
-        padding-top: 72px;
-        padding-bottom: 72px;
+  .subscribe {
+    padding-top: 72px;
+    padding-bottom: 72px;
 
-        background-image: url(../img/subscribe/subscribe-tablet-1x.jpg);
-    }
+    background-image: url(../img/subscribe/subscribe-tablet-1x.jpg);
+  }
 
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .subscribe {
-            background-image: url(../img/subscribe/tablet-2x.jpg);
-        }
+    .subscribe {
+      background-image: url(../img/subscribe/tablet-2x.jpg);
     }
+  }
 
-    .subscribe-title {
-        max-width: 378px;
+  .subscribe-title {
+    max-width: 378px;
 
-        font-size: 24px;
-        line-height: 1.16;
-    }
+    font-size: 24px;
+    line-height: 1.16;
+  }
 
-    .subscribe-description {
-        max-width: 467px;
-    }
+  .subscribe-description {
+    max-width: 467px;
+  }
 
-    .subscribe-button {
-        padding: 14px 40px;
+  .subscribe-button {
+    padding: 14px 40px;
 
-        font-size: 18px;
-        line-height: 1.22;
-    }
-
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .subscribe {
+    background-image: url(../img/subscribe/subscribe-desktop-1x.jpg);
+  }
 
-    .subscribe {
-        background-image: url(../img/subscribe/subscribe-desktop-1x.jpg);
-    }
-
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .subscribe {
-            background-image: url(../img/subscribe/subscribe-desktop-2x.jpg);
-        }
+    .subscribe {
+      background-image: url(../img/subscribe/subscribe-desktop-2x.jpg);
     }
+  }
 
-    .subscribe-button {
-        font-size: 18px;
-        line-height: 1.22;
-    }
+  .subscribe-button {
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
+
+/* <!-- Subscribe modal --> */
+.subscribe-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+}
+.subscribe-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  min-width: 311px;
+  min-height: 350px;
+  padding: 32px 24px;
+  border-radius: 10px;
+  background-color: var(--background-third-color);
+
+  object-fit: scale-down;
+  object-position: right top;
+  background-image: url(/img/popup-explore-chocolate/chocolate-mobile-1x.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.subscribe-modal-close-btn {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin-left: auto;
+  background: transparent;
+  border: none;
+}
+.subscribe-modal-close-btn-icon {
+  fill: var(--background-third-color);
+}
+.subscribe-modal-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--text-main-color);
+  margin-bottom: 24px;
+}
+.subscribe-modal-title span {
+  color: var(--text-second-color);
+}
+.subscribe-modal-form {
+  display: flex;
+}
+.subscribe-modal-wrap {
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+}
+.subscribe-modal-input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 14px 18px;
+  gap: 40px;
+
+  width: 263px;
+  height: 45px;
+
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 25px;
+}
+.subscribe-modal-btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--text-third-color);
+
+  padding: 12px 22px;
+  background: var(--text-second-color);
+  border-radius: 100px;
+  border-color: transparent;
+  right: 100px;
+  position: relative;
+}
+/* <!-- /Subscribe modal --> */
