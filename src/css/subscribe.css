@@ -53,13 +53,23 @@
 
 .subscribe-button {
     padding: 12px 28px;
-    border: 0;
+    border: none;
     border-radius: 100px;
 
     background-color: var(--accent-main-color);
     color: var(--text-third-color);
     font-weight: 600;
     line-height: 1.21;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+    color: var(--text-second-color);
+    background-color: var(--accent-second-color);
 }
 
 @media screen and (min-width: 768px) {

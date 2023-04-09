@@ -1,1 +1,125 @@
 /* Footer */
+.footer {
+  /* max-width: 375px;
+  margin-left: auto;
+  margin-right: auto; */
+  padding: 32px 0;
+  background-color: var(--background-second-color);
+}
+
+.footer-section-text {
+  max-width: 300px;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: -0.02em;
+  color: var(--text-third-color);
+}
+.base-name {
+  color: var(--text-second-color);
+}
+.subtitle-footer {
+  font-weight: 500;
+  line-height: 1.28;
+  color: var(--text-third-color);
+  margin-bottom: 14px;
+}
+.contacts-list .contacts-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: var(--text-third-color);
+}
+.social-icon {
+  cursor: pointer;
+  fill: var(--text-third-color);
+  transition: fill var(--animation-function), var(--animation-duration);
+}
+
+.footer-menu-list .menu-list {
+  color: var(--text-third-color);
+}
+.menu-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--text-third-color);
+}
+.contacts {
+  position: relative;
+}
+.footer-discription {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+.contacts-item:not(:last-child) {
+  margin-bottom: 4px;
+}
+.icon-list:not(:last-child) {
+  margin-right: 14px;
+}
+.social-list-icon {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* .footer-menu {
+  padding-bottom: 32px;
+} */
+.menu-list-item:not(:last-child) {
+  margin-bottom: 18px;
+}
+/* -----tablet----- */
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 50px 0;
+  }
+  .footer-discription {
+    display: flex;
+    padding-bottom: 50px;
+    margin-bottom: 24px;
+  }
+  .social-icon:hover,
+  .social-icon:focus {
+    fill: var(--text-second-color);
+  }
+  .contacts {
+    margin-left: auto;
+    width: 280px;
+  }
+  .footer-menu-list {
+    display: flex;
+    /* gap: 24px; */
+  }
+  .footer-menu-list .menu-list-item {
+    margin-bottom: 0;
+    letter-spacing: -0.02em;
+  }
+  .menu-list-item + .menu-list-item {
+    margin-left: 24px;
+  }
+}
+/* ------desktop-------- */
+@media screen and (min-width: 1200px) {
+  .footer-section-text {
+    max-width: 543px;
+  }
+  .contacts {
+    margin-left: 300px;
+    width: 164px;
+  }
+  .social-list-icon {
+    display: none;
+  }
+  .footer-section-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21;
+  }
+}
