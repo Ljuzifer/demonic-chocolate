@@ -3,7 +3,7 @@
     border-radius: 30px;
 } */
 
-.hero.overlay {
+.container.overlay {
     height: 620px;
     padding-top: 395px;
     /* max-width: 100%; */
