@@ -4,7 +4,6 @@
 }
 
 .hero {
-    /* padding-top: 395px; */
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -102,13 +101,9 @@
     margin-top: 32px;
     margin-bottom: 20px;
     margin-right: 12px;
-    /* margin-top: auto;
-    margin-bottom: auto; */
 }
 
 .hero-scroll-down-title {
-    /* display: flex;
-    flex-direction: row; */
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -134,7 +129,6 @@
 .hero-scroll-link:hover,
 .hero-scroll-link:focus {
     background-color: var(--accent-main-color);
-    /* color: var(--text-third-color); */
 }
 
 .hero-scroll-link:hover .hero-scroll-down-title,
@@ -161,7 +155,6 @@
 /* Mobile */
 @media screen and (max-width: 374px) {
     .container {
-        /* width: 100vw; */
         padding-top: 395px;
     }
     .hero-title {
@@ -171,38 +164,17 @@
 
 @media screen and (min-width: 375px) {
     .container {
-        /* width: 375px; */
         padding-top: 395px;
     }
 }
 
-/* @media screen and (max-width: 767px) {
-    .container {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .thumb .container {
-        margin-bottom: 72px;
-    }
-} */
-
 /* Tablet */
 @media screen and (min-width: 768px) {
     .container {
-        /* width: 768px; */
         padding-top: 671px;
         padding-left: 40px;
         padding-right: 40px;
     }
-
-    /* .thumb.hero .container {
-        margin-bottom: 50px;
-    }
-
-    .thumb .container {
-        margin-bottom: 100px;
-    } */
 
     .hero-title {
         font-size: 28px;
