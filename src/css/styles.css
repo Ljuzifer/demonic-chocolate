@@ -17,18 +17,20 @@
 @import url('./reviews.css');
 @import url('./subscribe.css');
 @import url('./footer.css');
+@import url('./modal-window-buynow.css');
 
 :root {
-  --accent-main-color: #FD9222;
-  --accent-second-color: #FCF1E0;
-  --background-main-color: #FAFAFA;
-  --background-second-color: #1E1823;
-  --background-third-color: #FFFFFF;
-  --background-list-color: #4C4C4C;
-  --border-list-color: #ECEDED;
+  --accent-main-color: #fd9222;
+  --accent-second-color: #fcf1e0;
+  --background-main-color: #fafafa;
+  --background-second-color: #1e1823;
+  --background-third-color: #ffffff;
+  --background-list-color: #4c4c4c;
+  --border-list-color: #eceded;
   --text-main-color: #111111;
-  --text-second-color: #FD9222;
-  --text-third-color: #FFFFFF;
+  --text-second-color: #fd9222;
+  --text-third-color: #ffffff;
+  --icon-accent-color: #f16529;
 
   --animation-function: cubic-bezier(0.4, 0, 0.2, 1);
   --animation-duration: 250ms;
