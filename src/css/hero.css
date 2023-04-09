@@ -1,23 +1,21 @@
 /* Hero */
-.overlay {
+/* .overlay {
     border-radius: 30px;
-}
+} */
 
-.hero {
-    /* padding-top: 395px; */
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+.hero.overlay {
+    height: 620px;
+    padding-top: 395px;
+    /* max-width: 100%; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
     align-items: center;
     text-align: left;
-    border-radius: 30px;
-    background-color: var(--background-third-color);
+    /* border-radius: 30px; */
+    /* background-color: var(--background-third-color); */
 }
 
-.thumb {
-    margin-left: 20px;
-    margin-right: 20px;
-}
+
 
 .overlay {
     background-size: cover;
@@ -27,6 +25,7 @@
         url(../img/hero/bg-mobile-1x.jpg);
     border-radius: 30px;
 }
+
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
@@ -131,28 +130,11 @@
  
 /* Mobile */
 @media screen and (max-width: 374px) {
-    .container {
-        width: 100vw;
-    }
+    
     .hero-title {
         max-width: 100%;
     }
 }
 
-@media screen and (min-width: 375px) {
-    .container {
-        width: 375px;
-        /* padding-top: 395px; */
-    }
-}
 
-@media screen and (max-width: 767px) {
-    .container {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
 
-    .thumb .container {
-        margin-bottom: 72px;
-    }
-}
