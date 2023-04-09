@@ -142,6 +142,60 @@
         </div>
       </li>
     </ul>
-    <button type="button" class="button button-review">Leave a review</button>
+    <button type="button" class="button button-review" data-modal-review-open>
+      Leave a review
+    </button>
   </div>
 </section>
+
+<!-- MODAL -->
+<div class="backdrop is-hidden" data-modal-review>
+  <div class="modal">
+    <div class="close">
+      <button type="button" class="modal-close" data-modal-review-close>
+        <svg width="12" height="12">
+          <use class="close-icon" href="../img/symbol-defs.svg#x"></use>
+        </svg>
+      </button>
+    </div>
+    <h2 class="title">
+      LEAVE A REVIEW ABOUT <span class="title-part">OUR CHOCOLATE</span>
+    </h2>
+    <form class="form">
+      <label class="form-field">
+        <input class="form-input" type="text" name="name" placeholder="Name" />
+      </label>
+      <label class="form-field">
+        <input
+          class="form-input"
+          type="email"
+          name="mail"
+          placeholder="Enter your email"
+        />
+      </label>
+      <label class="form-field phone">
+        <span class="phone-part">
+          <svg class="phone-ukr" width="24" height="18">
+            <use href="../img/symbol-defs.svg#flag"></use>
+          </svg>
+          <div class="pre-number">+380</div>
+        </span>
+        <input
+          class="form-input"
+          type="tel"
+          name="tel"
+          placeholder="Phone number"
+        />
+      </label>
+      <label class="form-field comment">
+        <textarea name="comment" placeholder="Enter text"></textarea>
+      </label>
+
+      <div class="send">
+        <button type="submit" class="button send">Send</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="../js/modal-review.js"></script>
