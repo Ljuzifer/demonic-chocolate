@@ -243,9 +243,7 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
+  
   .modal-window {
     width: 609px;
     padding-left: 48px;
