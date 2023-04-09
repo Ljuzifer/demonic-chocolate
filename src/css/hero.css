@@ -1,7 +1,7 @@
 /* Hero */
 
 .hero {
-    padding-top: 395px;
+    /* padding-top: 395px; */
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -138,6 +138,7 @@
 @media screen and (min-width: 375px) {
     .container {
         width: 375px;
+        padding-top: 395px;
     }
 }
 
