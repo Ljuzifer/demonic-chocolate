@@ -222,6 +222,7 @@
 	    z-index: 666;
 	    padding: 136px 50px 24px;
 		background-color: #1e1823;
+		transform: translateX(0);
 	}
 }
 
@@ -243,7 +244,7 @@
 		/* stroke: #111111; */
     }
 
-	.header-social-list.list {
+	.header-social-list {
 		display: flex;
 	}
 
@@ -277,7 +278,7 @@
 		/* justify-content: space-between; */
 		/* text-align: center; */
 		/* position: unset; */
-		transform: translateX(0);
+		
 		/* padding: 24px 0 32px; */
 		/* max-width: 100vw; */
 		/* min-height: 100vh; */
