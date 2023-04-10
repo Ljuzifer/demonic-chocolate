@@ -1,8 +1,8 @@
 /* Subscribe */
 
 .subscribe {
-    padding-top: 62px;
-    padding-bottom: 63px;
+  padding-top: 62px;
+  padding-bottom: 63px;
 
   background-image: url(../img/subscribe/subscribe-mobile-1x.jpg);
   background-repeat: no-repeat;
@@ -49,24 +49,24 @@
 }
 
 .subscribe-button {
-    padding: 12px 28px;
-    border: none;
-    border-radius: 100px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 100px;
 
-    background-color: var(--accent-main-color);
-    color: var(--text-third-color);
-    font-weight: 600;
-    line-height: 1.21;
+  background-color: var(--accent-main-color);
+  color: var(--text-third-color);
+  font-weight: 600;
+  line-height: 1.21;
 
-    transition-property: color, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-button:hover,
 .subscribe-button:focus {
-    color: var(--text-second-color);
-    background-color: var(--accent-second-color);
+  color: var(--text-second-color);
+  background-color: var(--accent-second-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -131,15 +131,24 @@
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
+  opacity: 1;
+  z-index: 999;
 }
+
+.subscribe-backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .subscribe-modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  min-width: 311px;
+  min-width: 275px;
   min-height: 350px;
-  padding: 15px 14px 32px 24px;
+  padding: 15px 14px 22px 15px;
   border-radius: 10px;
   background-color: var(--background-third-color);
 
@@ -149,6 +158,7 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -169,9 +179,11 @@
   background: transparent;
   border: none;
 }
+
 .subscribe-modal-close-btn-icon {
   fill: var(--background-third-color);
 }
+
 .subscribe-modal-aside {
   display: flex;
   flex-wrap: wrap;
@@ -187,80 +199,105 @@
   color: var(--text-main-color);
   margin-bottom: 24px;
 }
+
 .subscribe-modal-title span {
   color: var(--text-second-color);
   text-align: left;
   display: inline-block;
 }
+
 .subscribe-modal-form {
   display: flex;
 }
+
 .subscribe-modal-wrap {
   display: flex;
   align-items: flex-start;
   position: absolute;
 }
+
 .subscribe-modal-input {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 14px 18px;
   gap: 40px;
-  width: 263px;
+
+  width: 253px;
   height: 45px;
+
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 25px;
 }
-.subscribe-modal-btn {
-  font-weight: 600;
+.subscribe-modal-input::placeholder {
   font-size: 14px;
-  line-height: 1.2;
-  text-align: center;
-  color: var(--text-third-color);
+  line-height: 1.22;
+  align-items: center;
+  letter-spacing: -0.02em;
 
-  padding: 12px 22px;
-  background: var(--text-second-color);
-  border-radius: 100px;
-  border-color: transparent;
-  right: 100px;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.subscribe-modal-btn {
+  padding: 14px 22px;
+  right: 95px;
   position: relative;
 }
-.subscribe-modal-btn:is(:hover, :focus) {
-  background: rgba(252, 241, 224, 1);
-  color: rgba(253, 146, 34, 1);
-  transition: color var(-animation-duration) var(--animation-function);
+
+@media screen and (min-width: 374px) {
+  .subscribe-modal {
+    padding: 15px 14px 32px 24px;
+    min-width: 311px;
+  }
+
+  .subscribe-modal-input {
+    width: 263px;
+  }
+
+  .subscribe-modal-btn {
+    padding: 14px 28px;
+    right: 110px;
+  }
 }
+
 @media screen and (min-width: 768px) {
   .subscribe-modal {
     min-width: 538px;
-  min-height: 412px;
-  padding: 24px 24px 40px 40px;
-}
-.subscribe-modal {
-  background-image: url(../img/popup-explore-chocolate/chocolate-desktop-tablet-1x.jpg)
-}
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .subscribe-modal {
-    background-image: url(../img/popup-explore-chocolate/chocolate-desktop-tablet-2x.jpg);
+    min-height: 412px;
+    padding: 24px 24px 40px 40px;
   }
-}
-.subscribe-modal-aside {
-  top: 247px;
-  width: 298px;
-}
-.subscribe-modal-btn {
-  position: unset;
-  margin-left: 8px;
-  padding: 17px 40px;
 
-}
-.subscribe-modal-input {
-  width: 313px;
-height: 52px;
-}
+  .subscribe-modal {
+    background-image: url(../img/popup-explore-chocolate/chocolate-desktop-tablet-1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe-modal {
+      background-image: url(../img/popup-explore-chocolate/chocolate-desktop-tablet-2x.jpg);
+    }
+  }
+
+  .subscribe-modal-aside {
+    top: 247px;
+    width: 298px;
+  }
+
+  .subscribe-modal-btn {
+    position: unset;
+    margin-left: 8px;
+    padding: 17px 40px;
+  }
+
+  .subscribe-modal-input {
+    width: 313px;
+    height: 52px;
+  }
+  .subscribe-modal-input::placeholder {
+    font-size: 18px;
+  }
 }
 
 /* <!-- /Subscribe modal --> */
