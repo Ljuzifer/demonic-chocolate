@@ -21,7 +21,7 @@
     />
     
     <script type="module" crossorigin src="/demonic-chocolate/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/demonic-chocolate/assets/index-f8b17743.css">
+    <link rel="stylesheet" href="/demonic-chocolate/assets/index-5fb68e09.css">
   </head>
   <body>
     <!-- Header -->
@@ -736,9 +736,49 @@
         each piece is a work of art that is sure to please.
       </p>
     </div>
-    <button type="button" class="subscribe-button">Subscribe</button>
+    <button type="button" sub-data-modal-open class="subscribe-button">
+      Subscribe
+    </button>
   </div>
 </section>
+
+<!-- Subscribe modal -->
+<div class="subscribe-backdrop is-hidden" sub-data-modal>
+  <div class="subscribe-modal">
+    <button
+      type="button"
+      sub-data-modal-close
+      class="subscribe-modal-close-btn"
+    >
+      <svg class="subscribe-modal-close-btn-icon" width="24" height="24">
+        <use href="../img/symbol-defs.svg#x"></use>
+      </svg>
+    </button>
+    <div class="subscribe-modal-aside">
+      <h2 class="subscribe-modal-title">
+        Explore our <span>new chocolate&nbsp;</span> first!
+      </h2>
+      <form class="subscribe-modal-form">
+        <div class="subscribe-modal-wrap">
+          <input
+            type="email"
+            autocomplete="off"
+            aria-label="E-mail"
+            class="subscribe-modal-input"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button class="subscribe-button subscribe-modal-btn" type="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- /Subscribe modal -->
 
     </main>
     <!-- Footer -->
@@ -1010,8 +1050,10 @@
     <!-- ENOENT: no such file or directory, open '/home/runner/work/demonic-chocolate/demonic-chocolate/src/partials/vite-promo.html' -->
 
     
+
     <script src="./js/modal-buynow.js"></script>
     <script src="./js/mobile.js"></script>
+    <script src="./js/sub-modal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/swiper-ourproducts.js"></script>
   </body>
