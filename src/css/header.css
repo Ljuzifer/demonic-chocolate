@@ -25,13 +25,6 @@
 	font-style: normal;
 }
 
-.header-menu-list {
-	/* position: relative; */
-	/* display: flex; */
-	/* flex-direction: column; */
-	
-}
-
 .header-menu-item:not(:last-child) {
 	margin-bottom: 24px;
 }
@@ -175,9 +168,9 @@
 	    transform: translateX(0);
     }
 
-	.header-desktop-active:is .header-close {
+	/* .header-desktop-active:is .header-close {
 		display: block;
-	}
+	} */
 
 	.header-close {
 	position: absolute;
@@ -185,7 +178,7 @@
 	height: 20px;
 	top: 20px;
 	right: 20px;
-	z-index: 999;
+	z-index: 666;
 }
 
 	.header-social-list {
