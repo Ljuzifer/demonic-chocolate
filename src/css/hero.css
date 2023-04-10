@@ -81,7 +81,12 @@
 .hero-button-how-its-made:focus {
     background-color: var(--background-third-color);
     color: var(--text-second-color);
-    border: 1px solid var(--text-second-color);
+    border-color: var(--text-second-color);
+
+    transition:
+    background-color var(--animation-duration) var(--animation-function)
+    color var(--animation-duration) var(--animation-function)
+    border-color var(--animation-duration) var(--animation-function);
 }
 
 .hero-scroll-down {
@@ -130,6 +135,8 @@
 .hero-scroll-link:hover,
 .hero-scroll-link:focus {
     background-color: var(--accent-main-color);
+
+    transition: background-color var(--animation-duration) var(--animation-function);
 }
 
 .hero-scroll-link:hover .hero-scroll-down-title,
@@ -140,7 +147,10 @@
 .hero-scroll-link:hover .hero-scroll-icon,
 .hero-scroll-link:focus .hero-scroll-icon {
     background-color: var(--accent-main-color);
-    color: var(--text-third-color);
+    fill: var(--text-third-color);
+
+    transition: background-color var(--animation-duration) var(--animation-function)
+                color var(--animation-duration) var(--animation-function);
 }
  
 /* Mobile */
@@ -208,6 +218,7 @@
     }
 
     .hero-scroll-icon {
+        fill: var(--accent-main-color);
         width: 22px;
         height: 22px;
     }
