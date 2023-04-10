@@ -1,6 +1,8 @@
 /* Hero */
 .overlay {
+    max-width: 100%;
     border-radius: 30px;
+    padding-top: 395px;
 }
 
 .hero {
@@ -154,26 +156,36 @@
 
 /* Mobile */
 @media screen and (max-width: 374px) {
-    .container {
+    /* .container {
         padding-top: 395px;
-    }
+    } */
+
     .hero-title {
         max-width: 100%;
     }
 }
 
 @media screen and (min-width: 375px) {
-    .container {
+    /* .container {
         padding-top: 395px;
-    }
+    } */
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-    .container {
+    /* .container {
         padding-top: 671px;
         padding-left: 40px;
         padding-right: 40px;
+    } */
+
+    .overlay {
+        padding-top: 671px;
+    }
+
+    .hero {
+        /* width: 768px; */
+        width: 100%;
     }
 
     .hero-title {
@@ -243,16 +255,19 @@
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
-    .container {
+    /* .container {
         padding-top: 381px;
-    }
+    } */
 
-    .thumb.hero .container {
+    /* .thumb.hero .container {
         margin-bottom: 72px;
     }
 
     .thumb .container {
         margin-bottom: 128px;
+    } */
+    .overlay {
+        padding-top: 381px;
     }
 
     .hero-title {
