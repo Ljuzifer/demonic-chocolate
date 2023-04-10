@@ -1,7 +1,9 @@
 <section class="thumb">
   <div class="container container-review">
-    <h2 class="title"><span class="title-part">CHOCOLATE</span>IS LOVED</h2>
-    <ul class="review-list list">
+    <h2 class="review-title">
+      <span class="review-title-part">CHOCOLATE</span>IS LOVED
+    </h2>
+    <ul class="review-list">
       <li class="review">
         <div class="review-content">
           <div class="buyer">
@@ -150,45 +152,54 @@
 
 <!-- MODAL -->
 <div class="backdrop is-hidden" data-modal-review>
-  <div class="modal">
-    <div class="close">
-      <button type="button" class="modal-close" data-modal-review-close>
-        <svg width="12" height="12">
-          <use class="close-icon" href="../img/symbol-defs.svg#x"></use>
+  <div class="modal-review">
+    <div class="review-close">
+      <button type="button" class="modal-review-close" data-modal-review-close>
+        <svg class="review-close-icon" width="12" height="12">
+          <use href="../img/reviews/review-symbol-defs.svg#icon-close"></use>
         </svg>
       </button>
     </div>
-    <h2 class="title">
-      LEAVE A REVIEW ABOUT <span class="title-part">OUR CHOCOLATE</span>
+    <h2 class="review-title">
+      LEAVE A REVIEW ABOUT <span class="review-title-part">OUR CHOCOLATE</span>
     </h2>
-    <form class="form">
-      <label class="form-field">
-        <input class="form-input" type="text" name="name" placeholder="Name" />
-      </label>
-      <label class="form-field">
+    <form class="review-form">
+      <label class="review-form-field">
         <input
-          class="form-input"
+          class="review-form-input"
+          type="text"
+          name="name"
+          placeholder="Name"
+        />
+      </label>
+      <label class="review-form-field">
+        <input
+          class="review-form-input"
           type="email"
           name="mail"
           placeholder="Enter your email"
         />
       </label>
-      <label class="form-field phone">
+      <label class="review-form-field phone">
         <span class="phone-part">
           <svg class="phone-ukr" width="24" height="18">
-            <use href="../img/symbol-defs.svg#flag"></use>
+            <use href="../img/reviews/review-symbol-defs.svg#icon-ukr"></use>
           </svg>
           <div class="pre-number">+380</div>
         </span>
         <input
-          class="form-input"
+          class="review-form-input"
           type="tel"
           name="tel"
           placeholder="Phone number"
         />
       </label>
-      <label class="form-field comment">
-        <textarea name="comment" placeholder="Enter text"></textarea>
+      <label class="review-form-field comment">
+        <textarea
+          class="review-comment"
+          name="review-comment"
+          placeholder="Enter text"
+        ></textarea>
       </label>
 
       <div class="send">
