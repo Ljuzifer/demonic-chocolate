@@ -36,7 +36,7 @@
 .social-icon {
   cursor: pointer;
   fill: var(--text-third-color);
-  transition: fill var(--animation-function), var(--animation-duration);
+  transition: fill var(--animation-function), fill var(--animation-duration);
 }
 
 .footer-menu-list .menu-list {
@@ -47,6 +47,7 @@
   /* font-size: 14px; */
   line-height: 1.14;
   color: var(--text-third-color);
+  transition: color var(--animation-function), color var(--animation-duration);
 }
 .contacts {
   position: relative;
@@ -54,11 +55,8 @@
 .create-line {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 32px;
-<<<<<<< Updated upstream
 }
 .footer-discription {
-=======
->>>>>>> Stashed changes
   margin-bottom: 32px;
 }
 .contacts-item:not(:last-child) {
@@ -79,17 +77,18 @@
 .menu-list-item:not(:last-child) {
   margin-bottom: 18px;
 }
+.menu-list:hover,
+.menu-list:focus {
+  color: var(--text-second-color);
+}
 /* -----tablet----- */
 @media screen and (min-width: 768px) {
   .footer {
     padding: 50px 0;
   }
-<<<<<<< Updated upstream
   .create-line {
     margin-bottom: 24px;
   }
-=======
->>>>>>> Stashed changes
   .footer-section-text {
     margin-bottom: 0;
   }
