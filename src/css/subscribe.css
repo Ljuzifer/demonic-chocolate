@@ -1,9 +1,11 @@
 /* Subscribe */
 
 .subscribe {
-  padding-top: 62px;
-  padding-bottom: 63px;
-
+    max-width: 1200px;
+    padding-top: 62px;
+    padding-bottom: 63px;
+    margin-left: auto;
+    margin-right: auto;
   background-image: url(../img/subscribe/subscribe-mobile-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -57,10 +59,9 @@
   color: var(--text-third-color);
   font-weight: 600;
   line-height: 1.21;
-
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, background-color;
+    transition-duration: var(--animation-duration);
+    transition-timing-function: var(--animation-function);
 }
 
 .subscribe-button:hover,
