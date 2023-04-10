@@ -65,9 +65,12 @@
   background-color: transparent;
   padding: 0;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--animation-duration)
+    var(--animation-function);
 }
-
+.modal-icon {
+  transition: fill var(--animation-duration) var(--animation-function);
+}
 .title-buy {
   font-weight: 600;
   font-size: 24px;
@@ -187,6 +190,9 @@
   border: none;
   border-radius: 100px;
   margin-top: 18px;
+  transition: background-color var(--animation-duration)
+      var(--animation-function),
+    color var(--animation-duration) var(--animation-function);
 }
 .modal-form-wrapper {
   display: flex;
@@ -243,7 +249,6 @@
   }
 }
 @media screen and (min-width: 768px) {
-  
   .modal-window {
     width: 609px;
     padding-left: 48px;
