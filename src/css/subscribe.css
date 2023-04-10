@@ -146,7 +146,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  min-width: 275px;
+  width: 275px;
   min-height: 350px;
   padding: 15px 14px 22px 15px;
   border-radius: 10px;
@@ -248,7 +248,7 @@
 @media screen and (min-width: 374px) {
   .subscribe-modal {
     padding: 15px 14px 32px 24px;
-    min-width: 311px;
+    width: 311px;
   }
 
   .subscribe-modal-input {
@@ -263,7 +263,7 @@
 
 @media screen and (min-width: 768px) {
   .subscribe-modal {
-    min-width: 538px;
+    width: 538px;
     min-height: 412px;
     padding: 24px 24px 40px 40px;
   }
