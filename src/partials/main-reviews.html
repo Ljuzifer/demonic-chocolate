@@ -1,8 +1,10 @@
 <section class="thumb">
   <div class="container container-review">
-    <h2 class="title"><span class="title-part">CHOCOLATE</span>IS LOVED</h2>
-    <ul class="review-list list">
-      <li class="review">
+    <h2 class="review-title">
+      <span class="review-title-part">CHOCOLATE</span>IS LOVED
+    </h2>
+    <ul class="review-list">
+      <li class="review" id="card1">
         <div class="review-content">
           <div class="buyer">
             <img
@@ -24,7 +26,7 @@
           </p>
         </div>
       </li>
-      <li class="review">
+      <li class="review" id="card2">
         <div class="review-content">
           <div class="buyer">
             <img
@@ -48,7 +50,7 @@
           </p>
         </div>
       </li>
-      <li class="review">
+      <li class="review" id="card3">
         <div class="review-content">
           <div class="buyer">
             <img
@@ -71,8 +73,7 @@
           </p>
         </div>
       </li>
-
-      <li class="review">
+      <li class="review" id="card4">
         <div class="review-content">
           <div class="buyer">
             <img
@@ -94,7 +95,7 @@
           </p>
         </div>
       </li>
-      <li class="review">
+      <li class="review" id="card5">
         <div class="review-content">
           <div class="buyer">
             <img
@@ -118,7 +119,7 @@
           </p>
         </div>
       </li>
-      <li class="review">
+      <li class="review" id="card6">
         <div class="review-content">
           <div class="buyer">
             <img
@@ -142,6 +143,77 @@
         </div>
       </li>
     </ul>
-    <button type="button" class="button button-review">Leave a review</button>
+    <div class="review-list-slider">
+      <a class="slider-button current" href="#card1"></a>
+      <a class="slider-button" href="#card2"></a>
+      <a class="slider-button" href="#card3"></a>
+      <a class="slider-button" href="#card4"></a>
+      <a class="slider-button" href="#card5"></a>
+      <a class="slider-button" href="#card6"></a>
+    </div>
+    <button type="button" class="button button-review" data-modal-review-open>
+      Leave a review
+    </button>
   </div>
 </section>
+
+<!-- MODAL -->
+<div class="backdrop is-hidden" data-modal-review>
+  <div class="modal-review">
+    <div class="review-close">
+      <button type="button" class="modal-review-close" data-modal-review-close>
+        <svg class="review-close-icon" width="12" height="12">
+          <use href="../img/reviews/review-symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+    <h2 class="review-title">
+      LEAVE A REVIEW ABOUT <span class="review-title-part">OUR CHOCOLATE</span>
+    </h2>
+    <form class="review-form">
+      <label class="review-form-field">
+        <input
+          class="review-form-input"
+          type="text"
+          name="name"
+          placeholder="Name"
+        />
+      </label>
+      <label class="review-form-field">
+        <input
+          class="review-form-input"
+          type="email"
+          name="mail"
+          placeholder="Enter your email"
+        />
+      </label>
+      <label class="review-form-field phone">
+        <span class="phone-part">
+          <svg class="phone-ukr" width="24" height="18">
+            <use href="../img/reviews/review-symbol-defs.svg#icon-ukr"></use>
+          </svg>
+          <div class="pre-number">+380</div>
+        </span>
+        <input
+          class="review-form-input"
+          type="tel"
+          name="tel"
+          placeholder="Phone number"
+        />
+      </label>
+      <label class="review-form-field comment">
+        <textarea
+          class="review-comment"
+          name="review-comment"
+          placeholder="Enter text"
+        ></textarea>
+      </label>
+
+      <div class="send">
+        <button type="submit" class="button send">Send</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="../js/modal-review.js"></script>
