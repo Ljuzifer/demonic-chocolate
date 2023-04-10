@@ -230,6 +230,9 @@ text-transform: uppercase;
         .unique-section .container {
             margin-bottom: 100px;
           }
+          .unique-item {
+            width: 270px;
+          }
         .unique-front, .unique-back {
             width: 270px;} 
         .unique-image-wrapper{
