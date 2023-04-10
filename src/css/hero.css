@@ -57,6 +57,7 @@
 }
 
 .hero-button-how-its-made {
+    display: flex;
     min-width: 159px;
     height: 41px;
     border: 1px solid var(--text-third-color);
@@ -66,6 +67,14 @@
     font-weight: 600;
     color: var(--text-third-color);
     background-color: transparent;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-button-how-its-made-title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-button-how-its-made:hover,
@@ -115,6 +124,7 @@
     /* transform: matrix(0, 1, 1, 0, 0, 0); */
     border: transparent;
     border-radius: 50%;
+    color: var(--text-second-color);
 }
 
 .hero-scroll-link:hover,
