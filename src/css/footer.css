@@ -54,8 +54,11 @@
 .create-line {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 32px;
+<<<<<<< Updated upstream
 }
 .footer-discription {
+=======
+>>>>>>> Stashed changes
   margin-bottom: 32px;
 }
 .contacts-item:not(:last-child) {
@@ -81,9 +84,12 @@
   .footer {
     padding: 50px 0;
   }
+<<<<<<< Updated upstream
   .create-line {
     margin-bottom: 24px;
   }
+=======
+>>>>>>> Stashed changes
   .footer-section-text {
     margin-bottom: 0;
   }
