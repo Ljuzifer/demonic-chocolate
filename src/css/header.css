@@ -224,6 +224,7 @@
 
 	.header-menu-item {
 		margin: 0;
+		margin-top: 4px;
 	}
 
 	.header-menu-item:not(:last-child) {
@@ -233,7 +234,7 @@
 	.page-header {
 		display: flex;
 		justify-content: space-between;
-		align-items: baseline;
+		/* align-items: baseline; */
 		padding-top: 24px;
 		padding-bottom: 32px;
 		height: 80px;
