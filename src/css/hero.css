@@ -1,5 +1,13 @@
 /* Hero */
 
+.thumb.hero {
+    padding-bottom: 72px;
+}
+
+.stop-two {
+    display: none;
+}
+
 .overlay {
     min-height: 620px;
     padding: 395px 20px 20px;
@@ -149,7 +157,7 @@
     fill: var(--text-third-color);
 
     transition: background-color var(--animation-duration) var(--animation-function)
-                color var(--animation-duration) var(--animation-function);
+                fill var(--animation-duration) var(--animation-function);
 }
  
 /* Mobile */
@@ -169,7 +177,22 @@
 
 /* Tablet */
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .thumb.hero {
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .stop-one {
+        display: none;
+    }
+
+    .stop-two {
+        display: block;
+    }
+
     .overlay {
         max-width: 704px;
         min-height: 890px;
