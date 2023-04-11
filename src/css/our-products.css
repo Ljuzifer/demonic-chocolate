@@ -36,8 +36,8 @@
 
 .products-lists-wrapper {
   align-items: center;
-  padding-top: 8px;
-  padding-bottom: 32px;
+  margin-top: 8px;
+  margin-bottom: 32px;
 }
 .products-name {
   font-weight: 600;
