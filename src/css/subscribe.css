@@ -150,7 +150,7 @@
   width: 275px;
   min-height: 350px;
   padding: 15px 14px 22px 15px;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: var(--background-third-color);
 
   object-fit: scale-down;
