@@ -1,10 +1,5 @@
 /* Header */
 
-/* Приховуємо header-desktop, коли він стає цільовим елементом */
-#header-desktop:target {
-  display: none;
-}
-
 .header-logo {
   display: flex;
   align-items: center;

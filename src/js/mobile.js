@@ -26,6 +26,7 @@
   });
 })();
 
+// Closed menu after click
 const menuLinks = document.querySelectorAll('.header-menu-link');
 const closeMenuBtn = document.querySelector('.js-close-menu');
 const menuContainer = document.querySelector('.js-menu-container');
