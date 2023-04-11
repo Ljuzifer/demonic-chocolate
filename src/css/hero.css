@@ -50,7 +50,7 @@
 
 .hero-button-buy-now {
     min-width: 120px;
-    min-height: 41px;
+    height: 41px;
     padding: 12px 28px;
     background-color: var(--accent-main-color);
     border-radius: 100px;
@@ -70,7 +70,7 @@
 
 .hero-button-how-its-made {
     min-width: 159px;
-    min-height: 41px;
+    height: 41px;
     border: 1px solid var(--text-third-color);
     border-radius: 100px;
     font-family: 'Montserrat';
@@ -167,13 +167,17 @@
     .hero-button-buy-now {
         min-width: 100px;
         height: 41px;
-        margin-right: 5px;
+        margin-right: auto;
         padding: 0;
     }
 
     .hero-button-how-its-made {
         min-width: 130px;
         padding: 12px 0;
+    }
+
+    .stop-one {
+        display: none;
     }
 }
 
@@ -224,10 +228,14 @@
     }
 
     .hero-button-buy-now {
+        min-width: 144px;
+        height: 45px;
         padding: 14px 40px;
     }
 
     .hero-button-how-its-made {
+        min-width: 183px;
+        height: 45px;
         margin-right: auto;
         padding: 14px 40px;
     }
@@ -258,10 +266,6 @@
         max-width: 1136px;
         min-height: 600px;
         padding-top: 381px;
-    }
-
-    .hero-button-how-its-made {
-        margin-right: auto;
     }
 
     .overlay {
