@@ -128,7 +128,7 @@
     background: var(--text-third-color);
     border: transparent;
     border-radius: 50%;
-    color: var(--text-second-color);
+    fill: var(--text-second-color);
 }
 
 .hero-scroll-link:hover,
