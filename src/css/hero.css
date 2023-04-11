@@ -92,14 +92,6 @@
     border-color var(--animation-duration) var(--animation-function);
 }
 
-/* .hero-scroll-down {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 32px;
-    margin-bottom: 20px;
-} */
-
 .hero-scroll-down-title {
     font-family: 'Montserrat';
     font-style: normal;
@@ -110,19 +102,6 @@
     color: var(--text-third-color);
     margin-right: 12px;
 }
-
-/* .hero-scroll-link {
-    display: flex;
-    align-content: center; 
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    margin-left: 12px;
-    background: var(--text-third-color);
-    border: transparent;
-    border-radius: 50%;
-} */
 
 .hero-scroll-link {
     display: flex;
@@ -150,32 +129,21 @@
     left: 0px;
     top: 0px;
     background: var(--text-third-color);
-    /* transform: matrix(0, 1, 1, 0, 0, 0); */
     border: transparent;
     border-radius: 50%;
     fill: var(--accent-main-color);
 }
 
-/* .hero-scroll-link:hover,
-.hero-scroll-link:focus {
-    background-color: var(--accent-main-color);
-
-    transition: background-color var(--animation-duration) var(--animation-function);
-} */
-
 .hero-scroll-link:hover .hero-scroll-down-title,
 .hero-scroll-link:focus .hero-scroll-down-title {
-    /* background-color: var(--accent-main-color); */
-    /* fill: var(--text-third-color); */
     color: var(--text-second-color);
 
     transition: background-color var(--animation-duration) var(--animation-function)
-                color var(--animation-duration) var(--animation-function);
+        color var(--animation-duration) var(--animation-function);
 }
 
 .hero-scroll-link:hover .hero-thumb-scroll,
 .hero-scroll-link:focus .hero-thumb-scroll {
-    /* color: var(--text-second-color); */
     background-color: var(--accent-main-color);
 
     transition: background-color var(--animation-duration) var(--animation-function) color var(--animation-duration) var(--animation-function);
