@@ -49,6 +49,7 @@
     font-weight: 600;
     color: var(--background-third-color);
     margin-right: 14px;
+    border: 1px solid var(--accent-main-color);
 }
 
 .hero-button-buy-now:hover,
