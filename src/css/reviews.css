@@ -1,5 +1,9 @@
 /* Reviews */
 
+.thumb.happy {
+    padding-bottom: 72px;
+}
+
 .container-review {
     text-align: center;
 }
@@ -137,7 +141,6 @@
 }
 
 .backdrop.is-hidden {
-    visibility: ;
     opacity: 0;
     pointer-events: none;
 }
@@ -287,6 +290,7 @@
 /* MOBILE 320 */
 
 @media screen and (max-width:374px) {
+
     .review-content {
         width: 240px;
     }
@@ -294,6 +298,11 @@
 
 /* TABLET */
 @media screen and (min-width:768px) {
+
+    .thumb.happy {
+        padding-bottom: 100px;
+    }
+
     .review {
         width: 344px;
     }
@@ -379,6 +388,10 @@
 /* DESKTOP */
 
 @media screen and (min-width:1200px) {
+
+    .thumb.happy {
+        padding-bottom: 128px;
+    }
 
     .review {
         width: 360px;
