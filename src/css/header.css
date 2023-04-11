@@ -54,6 +54,13 @@
   /* height: 22px; */
   fill: none;
   stroke: var(--text-third-color);
+  transition: stroke var(--animation-duration) var(--animation-function);
+}
+
+.header-social-gajet:hover,
+.header-social-gajet:focus,
+.header-social-gajet:active {
+  stroke: var(--accent-main-color);
 }
 
 .header-close-line {
@@ -189,11 +196,6 @@
   .header-social-list {
     display: flex;
     column-gap: 18px;
-  }
-
-  .header-social-gajet:hover,
-  .header-social-gajet:focus {
-    stroke: var(--accent-main-color);
   }
 }
 
