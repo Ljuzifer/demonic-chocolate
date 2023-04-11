@@ -181,7 +181,7 @@
     transition: translate var(--animation-duration) var(--animation-function);
 }
 
-.modal-review-close:hover {
+.modal-review-close:hover, .modal-review-close:focus {
     background-color: var(--accent-second-color);
     fill: var(--accent-main-color);}
 
