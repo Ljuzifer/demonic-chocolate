@@ -22,6 +22,7 @@
   pointer-events: none;
 }
 .modal-window {
+  position: relative;
   display: flex;
   flex-direction: column;
   max-height: 100%;
@@ -33,7 +34,7 @@
   border-radius: 15px;
   transition: translate 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding-top: 20px;
+  padding-top: 32px;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 32px;
@@ -42,7 +43,7 @@
   color: var(--accent-main-color);
 }
 .modal-window-header {
-  position: relative;
+  /* position: relative; */
 }
 .modal-window-body {
   flex-shrink: 1;
@@ -53,8 +54,8 @@
 }
 .modal-window-close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 20px;
+  right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +79,6 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 20px;
   margin-bottom: 32px;
 }
 .cards-basket-wrapper {
@@ -86,6 +86,7 @@
   display: grid;
   grid-template-columns: repeat(var(--columns), 1fr);
   gap: 8px;
+  margin-bottom: 32px;
 }
 .cards-basket {
   background-color: var(--background-third-color);
@@ -112,9 +113,9 @@
   font-size: 14px;
   line-height: 1.2;
 }
-.modal-form {
+/* .modal-form {
   margin-top: 32px;
-}
+} */
 .description {
   font-weight: 500;
   font-size: 12px;
@@ -122,10 +123,15 @@
   letter-spacing: -0.02em;
   margin-bottom: 8px;
 }
-.paragraf-descr {
+/* .paragraf-descr {
   margin-top: 18px;
-}
+} */
+/* .modal-form-field {
+  margin-bottom: 18px;
+} */
 .modal-form-field {
+  display: block;
+  width: 100%;
   margin-bottom: 18px;
 }
 .modal-form-input {
@@ -137,7 +143,11 @@
 
   border: 1px solid rgba(17, 17, 17, 0.1);
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--animation-duration) var(--animation-function);
+}
+.modal-form-input:focus {
+  outline: none;
+  border-color: var(--accent-main-color);
 }
 .modal-form-input::placeholder {
   color: rgba(64, 64, 64, 0.3);
@@ -159,18 +169,22 @@
   overflow: hidden;
 }
 
-.modal-form-input-name {
+/* .modal-form-input-name {
   margin-bottom: 8px;
-}
+} */
 
 .modal-form-comment {
   width: 100%;
   resize: none;
   height: 91px;
   padding: 14px 18px;
-  border-color: rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 13px;
+  transition: border-color var(--animation-duration) var(--animation-function);
+}
+.modal-form-comment:focus {
+  outline: none;
+  border-color: var(--accent-main-color);
 }
 .modal-form-comment::placeholder {
   font-family: Montserrat;
@@ -189,7 +203,7 @@
   cursor: pointer;
   border: none;
   border-radius: 100px;
-  margin-top: 18px;
+  /* margin-top: 18px; */
   transition: background-color var(--animation-duration)
       var(--animation-function),
     color var(--animation-duration) var(--animation-function);
@@ -249,10 +263,16 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .modal-window-close {
+    top: 31px;
+    right: 31px;
+  }
   .modal-window {
     width: 609px;
+    padding-top: 48px;
     padding-left: 48px;
     padding-right: 48px;
+    padding-bottom: 48px;
   }
   .modal-window-close:hover,
   .modal-window-close:focus {
@@ -267,6 +287,9 @@
   }
   /* .modal-window-body {
     display: flex;
+  } */
+  /* .title-buy {
+    margin-top: 17px;
   } */
   .description {
     font-size: 14px;
@@ -296,6 +319,7 @@
   .cards-basket-wrapper {
     --columns: 3;
     gap: 16px;
+    margin-bottom: 40px;
   }
   .cards-basket-img {
     width: 120px;
@@ -319,9 +343,9 @@
     height: 23px;
     left: 24px;
   }
-  .modal-form-field {
+  /* .modal-form-field {
     width: 50%;
-  }
+  } */
   .modal-form-comment {
     height: 137px;
     padding: 22px 24px;

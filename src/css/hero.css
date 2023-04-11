@@ -31,6 +31,7 @@
 }
 
 .hero-title {
+    max-width: 299px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -39,6 +40,7 @@
     letter-spacing: -0.03em;
     color: var(--text-third-color);
     margin-bottom: 32px;
+    margin-right: 16px;
 }
 
 .hero-button {
@@ -47,8 +49,7 @@
 }
 
 .hero-button-buy-now {
-    min-width: 120px;
-    height: 41px;
+    padding: 14px 40px;
     background-color: var(--accent-main-color);
     border-radius: 100px;
     font-family: 'Montserrat';
@@ -56,6 +57,7 @@
     font-weight: 600;
     color: var(--background-third-color);
     margin-right: 14px;
+    border: 1px solid var(--accent-main-color);
 }
 
 .hero-button-buy-now:hover,
@@ -66,8 +68,7 @@
 
 .hero-button-how-its-made {
     display: flex;
-    min-width: 159px;
-    height: 41px;
+    padding: 14px 40px;
     border: 1px solid var(--text-third-color);
     border-radius: 100px;
     font-family: 'Montserrat';
@@ -77,6 +78,7 @@
     background-color: transparent;
     align-items: center;
     text-align: center;
+    cursor: pointer;
 }
 
 .hero-button-how-its-made-title {
@@ -97,14 +99,6 @@
     border-color var(--animation-duration) var(--animation-function);
 }
 
-.hero-scroll-down {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 32px;
-    margin-bottom: 20px;
-}
-
 .hero-scroll-down-title {
     font-family: 'Montserrat';
     font-style: normal;
@@ -113,16 +107,24 @@
     line-height: 1.17;
     letter-spacing: -0.03em;
     color: var(--text-third-color);
+    margin-right: 12px;
 }
 
 .hero-scroll-link {
     display: flex;
-    align-content: center; 
+    flex-direction: row;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 20px;    
+}
+
+.hero-thumb-scroll {
+    display: flex;
+    align-content: center;
     align-items: center;
     justify-content: center;
     width: 28px;
     height: 28px;
-    margin-left: 12px;
     background: var(--text-third-color);
     border: transparent;
     border-radius: 50%;
@@ -136,26 +138,29 @@
     background: var(--text-third-color);
     border: transparent;
     border-radius: 50%;
-    color: var(--text-second-color);
-}
-
-.hero-scroll-link:hover,
-.hero-scroll-link:focus {
-    background-color: var(--accent-main-color);
-
-    transition: background-color var(--animation-duration) var(--animation-function);
+    fill: var(--accent-main-color);
 }
 
 .hero-scroll-link:hover .hero-scroll-down-title,
 .hero-scroll-link:focus .hero-scroll-down-title {
     color: var(--text-second-color);
+
+    transition: background-color var(--animation-duration) var(--animation-function)
+        color var(--animation-duration) var(--animation-function);
+}
+
+.hero-scroll-link:hover .hero-thumb-scroll,
+.hero-scroll-link:focus .hero-thumb-scroll {
+    background-color: var(--accent-main-color);
+
+    transition: background-color var(--animation-duration) var(--animation-function) color var(--animation-duration) var(--animation-function);
 }
 
 .hero-scroll-link:hover .hero-scroll-icon,
 .hero-scroll-link:focus .hero-scroll-icon {
-    background-color: var(--accent-main-color);
     fill: var(--text-third-color);
-
+    background-color: var(--accent-main-color);
+    
     transition: background-color var(--animation-duration) var(--animation-function)
                 fill var(--animation-duration) var(--animation-function);
 }
@@ -218,14 +223,15 @@
 
     .hero-button {
         flex-wrap: nowrap;
+        align-items: flex-end;
     }
 
     .hero-button-how-its-made {
         margin-right: auto;
     }
 
-    .hero-scroll-down {
-        margin: 7px 0 0;
+    .hero-scroll-link {
+        margin: 0;
     }
 
     .hero-scroll-down-title {
@@ -233,10 +239,9 @@
         line-height: 1.29;
     }
 
-    .hero-scroll-link {
+    .hero-thumb-scroll {
         width: 38px;
         height: 38px;
-        margin-left: 14px;
     }
 
     .hero-scroll-icon {
