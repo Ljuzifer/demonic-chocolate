@@ -178,7 +178,12 @@
     width: 24px;
     height: 24px;
     border: none;
+    transition: translate var(--animation-duration) var(--animation-function);
 }
+
+.modal-review-close:hover, .modal-review-close:focus {
+    background-color: var(--accent-second-color);
+    fill: var(--accent-main-color);}
 
 .review-close-icon {
     width: 12px;
@@ -204,6 +209,13 @@
     padding: 14px 18px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    transition: translate var(--animation-duration) var(--animation-function);
+}
+
+.review-form-input:hover,
+.review-form-input:focus {
+    outline: none;
+    border-color: var(--accent-main-color);
 }
 
 .review-form-field.phone {
@@ -243,6 +255,12 @@
     resize: none;
     padding: 14px 18px;
     outline: none;
+}
+
+.review-comment:hover,
+.review-comment:focus {
+    outline: none;
+    border-color: var(--accent-main-color);
 }
 
 .button.send {
