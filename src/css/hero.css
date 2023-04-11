@@ -41,7 +41,9 @@
 }
 
 .hero-button-buy-now {
-    padding: 14px 40px;
+    min-width: 120px;
+    min-height: 41px;
+    padding: 12px 28px;
     background-color: var(--accent-main-color);
     border-radius: 100px;
     font-family: 'Montserrat';
@@ -59,8 +61,8 @@
 }
 
 .hero-button-how-its-made {
-    display: flex;
-    padding: 14px 40px;
+    min-width: 159px;
+    min-height: 41px;
     border: 1px solid var(--text-third-color);
     border-radius: 100px;
     font-family: 'Montserrat';
@@ -68,15 +70,9 @@
     font-weight: 600;
     color: var(--text-third-color);
     background-color: transparent;
-    align-items: center;
     text-align: center;
     cursor: pointer;
-}
-
-.hero-button-how-its-made-title {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 12px 0px;
 }
 
 .hero-button-how-its-made:hover,
@@ -163,11 +159,12 @@
         min-width: 100px;
         height: 41px;
         margin-right: 5px;
+        padding: 0;
     }
 
     .hero-button-how-its-made {
-        min-width: 135px;
-        height: 41px;
+        min-width: 130px;
+        padding: 12px 0;
     }
 }
 
@@ -202,8 +199,13 @@
         align-items: flex-end;
     }
 
+    .hero-button-buy-now {
+        padding: 14px 40px;
+    }
+
     .hero-button-how-its-made {
         margin-right: auto;
+        padding: 14px 40px;
     }
 
     .hero-scroll-link {
