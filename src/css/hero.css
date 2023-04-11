@@ -121,7 +121,6 @@
     left: 0px;
     top: 0px;
     background: var(--text-third-color);
-    /* transform: matrix(0, 1, 1, 0, 0, 0); */
     border: transparent;
     border-radius: 50%;
     color: var(--text-second-color);
