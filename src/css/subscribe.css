@@ -185,6 +185,9 @@
   fill: var(--background-third-color);
 }
 
+.subscribe-modal-close-btn-icon:is(:hover, :focus) {
+  fill: var(--accent-main-color);
+}
 .subscribe-modal-aside {
   display: flex;
   flex-wrap: wrap;
@@ -238,6 +241,10 @@
   letter-spacing: -0.02em;
 
   color: rgba(64, 64, 64, 0.3);
+}
+
+.subscribe-modal-input:is(:hover, :focus) {
+  border-color: var(--accent-main-color);
 }
 
 .subscribe-modal-btn {
