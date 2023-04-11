@@ -1,5 +1,10 @@
 /* Header */
 
+/* Приховуємо header-desktop, коли він стає цільовим елементом */
+#header-desktop:target {
+  display: none;
+}
+
 .header-logo {
   display: flex;
   align-items: center;
@@ -189,6 +194,11 @@
   .header-social-list {
     display: flex;
     column-gap: 18px;
+  }
+
+  .header-social-gajet:hover,
+  .header-social-gajet:focus {
+    stroke: var(--accent-main-color);
   }
 }
 

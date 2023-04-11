@@ -25,3 +25,17 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+
+const menuLinks = document.querySelectorAll('.header-menu-link');
+const closeMenuBtn = document.querySelector('.js-close-menu');
+const menuContainer = document.querySelector('.js-menu-container');
+
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    menuContainer.classList.remove('is-open');
+  });
+});
+
+closeMenuBtn.addEventListener('click', () => {
+  menuContainer.classList.remove('is-open');
+});
