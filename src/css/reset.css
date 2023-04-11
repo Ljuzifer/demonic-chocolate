@@ -9,6 +9,11 @@ p {
   margin: 0;
 }
 
+section {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
