@@ -9,10 +9,9 @@ p {
   margin: 0;
 }
 
-/* section {
-  overflow-y: scroll;
+html {
   scroll-behavior: smooth;
-} */
+}
 
 body {
   margin: 0;
@@ -24,9 +23,6 @@ body {
 
   background-color: var(--background-main-color);
   color: var(--text-main-color);
-
-  /* overflow-y: scroll;
-  scroll-behavior: smooth; */
 }
 
 ul {
