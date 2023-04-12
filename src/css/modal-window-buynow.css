@@ -42,9 +42,7 @@
 .header-accent {
   color: var(--accent-main-color);
 }
-.modal-window-header {
-  /* position: relative; */
-}
+
 .modal-window-body {
   flex-shrink: 1;
   overflow-y: auto;
@@ -101,9 +99,7 @@
   width: 84px;
   height: 69px;
 }
-/* .cards-basket:not(:last-child) {
-  margin-bottom: 8px;
-} */
+
 .chocolale-size {
   padding: 6px 16px;
   border: 1px solid rgba(17, 17, 17, 0.1);
@@ -113,9 +109,7 @@
   font-size: 14px;
   line-height: 1.2;
 }
-/* .modal-form {
-  margin-top: 32px;
-} */
+
 .description {
   font-weight: 500;
   font-size: 12px;
@@ -123,12 +117,7 @@
   letter-spacing: -0.02em;
   margin-bottom: 8px;
 }
-/* .paragraf-descr {
-  margin-top: 18px;
-} */
-/* .modal-form-field {
-  margin-bottom: 18px;
-} */
+
 .modal-form-field {
   display: block;
   width: 100%;
@@ -138,7 +127,6 @@
   width: 100%;
   height: 45px;
   border-radius: 8px;
-  /* padding-left: 18px; */
   padding: 14px 18px;
 
   border: 1px solid rgba(17, 17, 17, 0.1);
@@ -158,9 +146,6 @@
 .modal-form-input-tel {
   padding-left: 106px;
 }
-.modal-form-input-tel::placeholder {
-  /* padding-left: 90px; */
-}
 
 .modal-form-input-card {
   padding-right: 45px;
@@ -168,10 +153,6 @@
   white-space: nowrap;
   overflow: hidden;
 }
-
-/* .modal-form-input-name {
-  margin-bottom: 8px;
-} */
 
 .modal-form-comment {
   width: 100%;
@@ -203,7 +184,7 @@
   cursor: pointer;
   border: none;
   border-radius: 100px;
-  /* margin-top: 18px; */
+
   transition: background-color var(--animation-duration)
       var(--animation-function),
     color var(--animation-duration) var(--animation-function);
@@ -244,11 +225,7 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
 }
-/* .modal-window-footer {
-  position: sticky;
-  bottom: 0;
-  background-color: inherit;
-} */
+
 @media screen and (max-width: 767px) {
   .products-header {
     font-size: 20px;
@@ -285,12 +262,7 @@
   .chocolale-size {
     padding: 8px 27px;
   }
-  /* .modal-window-body {
-    display: flex;
-  } */
-  /* .title-buy {
-    margin-top: 17px;
-  } */
+
   .description {
     font-size: 14px;
   }
@@ -307,9 +279,6 @@
   }
   .cards-basket {
     padding: 24px 20px;
-
-    /* width: 160px;
-    height: 196px; */
 
     flex-direction: column;
   }
@@ -343,9 +312,7 @@
     height: 23px;
     left: 24px;
   }
-  /* .modal-form-field {
-    width: 50%;
-  } */
+
   .modal-form-comment {
     height: 137px;
     padding: 22px 24px;
