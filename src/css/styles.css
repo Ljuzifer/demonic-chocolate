@@ -5,7 +5,6 @@
   |============================
 */
 
-/* @import url('./vite-promo.css'); */
 @import url('./reset.css');
 @import url('./header.css');
 @import url('./hero.css');
@@ -35,7 +34,9 @@
   --animation-function: cubic-bezier(0.4, 0, 0.2, 1);
   --animation-duration: 280ms;
 }
-
+body.scroll-hidden {
+  overflow: hidden;
+}
 /* Mobile */
 @media screen and (max-width: 374px) {
   .container {
@@ -54,10 +55,6 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-
-  .thumb .container {
-    margin-bottom: 72px;
-  }
 }
 
 /* Tablet */
@@ -65,27 +62,11 @@
   .container {
     width: 768px;
   }
-
-  .thumb.hero .container {
-    margin-bottom: 50px;
-  }
-
-  .thumb .container {
-    margin-bottom: 100px;
-  }
 }
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-  }
-
-  .thumb.hero .container {
-    margin-bottom: 72px;
-  }
-
-  .thumb .container {
-    margin-bottom: 128px;
   }
 }

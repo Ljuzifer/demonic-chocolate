@@ -150,7 +150,7 @@
   width: 275px;
   min-height: 350px;
   padding: 15px 14px 22px 15px;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: var(--background-third-color);
 
   object-fit: scale-down;
@@ -187,6 +187,8 @@
 
 .subscribe-modal-close-btn-icon:is(:hover, :focus) {
   fill: var(--accent-main-color);
+  border-radius: 50%;
+  background-color: var(--accent-second-color);
 }
 .subscribe-modal-aside {
   display: flex;

@@ -88,6 +88,13 @@
   background: transparent;
 }
 
+.header-burger:hover .burger-line,
+.header-burger:focus .burger-line {
+  background-color: var(--accent-main-color);
+
+  transition: background-color var(--animation-duration) var(--animation-function);
+}
+
 .burger-line {
   display: block;
 }
@@ -186,11 +193,19 @@
     position: absolute;
     width: 20px;
     height: 20px;
+    padding: 0;
     top: 20px;
     right: 20px;
     z-index: 666;
     background: transparent;
     border: none;
+  }
+
+  .header-close:hover .header-close-line,
+  .header-close:focus .header-close-line {
+    background-color: var(--accent-main-color);
+
+    transition: background-color var(--animation-duration) var(--animation-function);
   }
 
   .header-social-list {
