@@ -18,6 +18,11 @@
   color: var(--text-second-color);
 }
 
+.contact-link:hover,
+.contact-link:focus {
+  fill: var(--accent-main-color);
+}
+
 .subtitle-footer {
   font-weight: 500;
   line-height: 1.28;

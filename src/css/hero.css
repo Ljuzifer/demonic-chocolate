@@ -68,7 +68,7 @@
     color: var(--text-second-color);
 }
 
-.hero-button-how-its-made {
+.hero-button-how-its-made-title {
     min-width: 159px;
     height: 41px;
     border: 1px solid var(--text-third-color);
@@ -83,8 +83,8 @@
     padding: 12px 0px;
 }
 
-.hero-button-how-its-made:hover,
-.hero-button-how-its-made:focus {
+.hero-button-how-its-made-title:hover,
+.hero-button-how-its-made-title:focus {
     background-color: var(--background-third-color);
     color: var(--text-second-color);
     border-color: var(--text-second-color);
@@ -137,12 +137,8 @@
     fill: var(--accent-main-color);
 }
 
-.hero-scroll-link:hover .hero-button-how-its-made,
-.hero-scroll-link:focus .hero-button-how-its-made {
-    color: var(--text-second-color);
-
-    transition: background-color var(--animation-duration) var(--animation-function)
-        color var(--animation-duration) var(--animation-function);
+.hero-scroll-link:hover .hero-scroll-down-title {
+    color: var(--accent-main-color);
 }
 
 .hero-scroll-link:hover .hero-thumb-scroll,
@@ -171,7 +167,7 @@
         padding: 0;
     }
 
-    .hero-button-how-its-made {
+    .hero-button-how-its-made-title {
         min-width: 130px;
         padding: 12px 0;
     }
@@ -233,11 +229,14 @@
         padding: 14px 40px;
     }
 
-    .hero-button-how-its-made {
+    .hero-button-how-its-made-title {
         min-width: 183px;
         height: 45px;
-        margin-right: auto;
         padding: 14px 40px;
+    }
+
+    .hero-button-how-its-made {
+        margin-right: auto;
     }
 
     .hero-scroll-link {
