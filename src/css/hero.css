@@ -1,5 +1,13 @@
 /* Hero */
 
+.thumb.hero {
+    padding-bottom: 72px;
+}
+
+.stop-two {
+    display: none;
+}
+
 .overlay {
     min-height: 620px;
     padding: 395px 20px 20px;
@@ -41,7 +49,9 @@
 }
 
 .hero-button-buy-now {
-    padding: 14px 40px;
+    min-width: 120px;
+    height: 41px;
+    padding: 12px 28px;
     background-color: var(--accent-main-color);
     border-radius: 100px;
     font-family: 'Montserrat';
@@ -59,8 +69,8 @@
 }
 
 .hero-button-how-its-made {
-    display: flex;
-    padding: 14px 40px;
+    min-width: 159px;
+    height: 41px;
     border: 1px solid var(--text-third-color);
     border-radius: 100px;
     font-family: 'Montserrat';
@@ -68,15 +78,9 @@
     font-weight: 600;
     color: var(--text-third-color);
     background-color: transparent;
-    align-items: center;
     text-align: center;
     cursor: pointer;
-}
-
-.hero-button-how-its-made-title {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 12px 0px;
 }
 
 .hero-button-how-its-made:hover,
@@ -152,8 +156,9 @@
 .hero-scroll-link:focus .hero-scroll-icon {
     fill: var(--text-third-color);
     background-color: var(--accent-main-color);
-
-    transition: background-color var(--animation-duration) var(--animation-function) color var(--animation-duration) var(--animation-function);
+    
+    transition: background-color var(--animation-duration) var(--animation-function)
+                fill var(--animation-duration) var(--animation-function);
 }
  
 /* Mobile */
@@ -162,18 +167,38 @@
     .hero-button-buy-now {
         min-width: 100px;
         height: 41px;
-        margin-right: 5px;
+        margin-right: auto;
+        padding: 0;
     }
 
     .hero-button-how-its-made {
-        min-width: 135px;
-        height: 41px;
+        min-width: 130px;
+        padding: 12px 0;
+    }
+
+    .stop-one {
+        display: none;
     }
 }
 
 /* Tablet */
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .thumb.hero {
+        padding-bottom: 50px;
+    }
+}
+
 @media screen and (min-width: 768px) {
+
+    .stop-one {
+        display: none;
+    }
+
+    .stop-two {
+        display: block;
+    }
+
     .overlay {
         max-width: 704px;
         min-height: 890px;
@@ -202,8 +227,17 @@
         align-items: flex-end;
     }
 
+    .hero-button-buy-now {
+        min-width: 144px;
+        height: 45px;
+        padding: 14px 40px;
+    }
+
     .hero-button-how-its-made {
+        min-width: 183px;
+        height: 45px;
         margin-right: auto;
+        padding: 14px 40px;
     }
 
     .hero-scroll-link {
@@ -232,10 +266,6 @@
         max-width: 1136px;
         min-height: 600px;
         padding-top: 381px;
-    }
-
-    .hero-button-how-its-made {
-        margin-right: auto;
     }
 
     .overlay {

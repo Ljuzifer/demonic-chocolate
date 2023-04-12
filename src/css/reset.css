@@ -9,6 +9,10 @@ p {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -19,8 +23,6 @@ body {
 
   background-color: var(--background-main-color);
   color: var(--text-main-color);
-
-  scroll-behavior: smooth;
 }
 
 ul {

@@ -1,11 +1,12 @@
 /* Unique components */
-.unique-section .container {
-    margin-bottom: 72px;
-    padding-top: 72px;
-  }
 
-.unique-section {
-    margin-bottom: 72px;
+.unique-secta {
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+
+.taste {
+    color: var(--accent-main-color);
 }
 
 .unique-header {
@@ -192,26 +193,35 @@ margin-bottom: 25px;
         font-size: 12px;
     }
 }
+
 @media screen and (min-width:768px) {
-    .unique-section .container {
-        margin-bottom: 128px;
-      }
+    
+    .unique-secta {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
     .unique-header{
         max-width: 411px;
         margin-left: auto;
         margin-right: auto;
     }
+
     .unique-paragraph{max-width: 486px;
         margin-left: auto;
-        margin-right: auto;}
+        margin-right: auto;
+    }
+
     .unique-list{
         display: flex;
         flex-wrap: wrap;
         gap: 32px;
     }
+
     .unique-item:not(:last-child) {
         margin-bottom: unset;
     }
+
     .order-chockolate{
         order:-1;
     }
@@ -219,56 +229,73 @@ margin-bottom: 25px;
     .order-milk {
         order: 2;
     }
+
     .order-nuts {
         order:3;
     }
+
     .order-coffee {
         order: 1;
     }
-    }
+
+}
     @media screen and (min-width:1200px) {
-        .unique-section .container {
-            margin-bottom: 100px;
-          }
-          .unique-item {
+
+        .unique-secta {
+            padding-top: 128px;
+            padding-bottom: 128px;
+        }
+
+        .unique-item {
             width: 270px;
-          }
+        }
+
         .unique-front, .unique-back {
-            width: 270px;} 
+            width: 270px;
+        }
+
         .unique-image-wrapper{
             justify-content: flex-start;
         }
+
         .unique-back{
             display: flex;
             flex-wrap: nowrap;
             font-size:14px;
             padding: 20px;
             
-        }  
+        }
+
         .unique-list {
             flex-wrap: nowrap;
             gap: 19px;
         }
+
         .unique-text {
             display: -webkit-box;
             -webkit-box-orient: vertical;
             overflow: hidden;
             -webkit-line-clamp: 9;
         }
+
         .unique-item:last-child .unique-text{
             -webkit-line-clamp: 7;
         }
+
         .unique-img{
             width: 206px;
             padding: unset;
         }
+
         .unique-front{
             padding: 28px;
         }
+
         .unique-image-wrapper{
             /* padding: 28px 36px 0 28px; */
             margin-bottom: 36px;
         }
+
         .order-chockolate{
             order: unset;
         }
@@ -276,9 +303,11 @@ margin-bottom: 25px;
         .order-milk {
             order: unset;
         }
+
         .order-nuts {
             order: unset;
         }
+        
         .order-coffee {
             order: unset;
         }
