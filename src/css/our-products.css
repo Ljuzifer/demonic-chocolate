@@ -1,5 +1,3 @@
-/* Our products */
-
 .thumb.products {
   padding-bottom: 72px;
 }
@@ -37,7 +35,7 @@
   background-color: var(--background-third-color);
 }
 .products-image {
-  max-height: 201px;
+  margin: 0 auto;
 }
 
 .products-lists-wrapper {
@@ -100,14 +98,12 @@
 }
 
 @media screen and (min-width: 768px) {
-  
   .thumb.products {
     padding-bottom: 100px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-
   .thumb.products {
     padding-bottom: 128px;
   }
