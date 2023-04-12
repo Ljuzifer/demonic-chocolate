@@ -35,7 +35,9 @@
   --animation-function: cubic-bezier(0.4, 0, 0.2, 1);
   --animation-duration: 280ms;
 }
-
+body.scroll-hidden {
+  overflow: hidden;
+}
 /* Mobile */
 @media screen and (max-width: 374px) {
   .container {
