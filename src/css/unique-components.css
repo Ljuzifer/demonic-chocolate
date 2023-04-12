@@ -27,9 +27,7 @@
     text-align: center;
     margin-bottom: 24px;
 }
-.unique-list {
 
-}
 /* flip card */
 .unique-item {
     background-color: transparent;
@@ -103,9 +101,6 @@ margin-bottom: 25px;
     /* padding-top: 28px;
     padding-bottom: 25px; */
 }
-.on-orange {
-
-}
 .unique-photo-subtitle {
     text-align: left;
 
@@ -176,10 +171,7 @@ margin-bottom: 25px;
     line-height: 1.28;
     letter-spacing: -0.02em;
 }
-.on-white {
-}
-.on-black {
-}
+
 @media screen and (max-width:375px) {
     .unique-item {
         max-width: 100%;}
