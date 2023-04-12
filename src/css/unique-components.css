@@ -1,10 +1,6 @@
 /* Unique components */
-/* .unique-section .container {
-    margin-bottom: 72px;
-    padding-top: 72px;
-  } */
 
-.unique-section {
+.unique-secta {
     padding-top: 72px;
     padding-bottom: 72px;
 }
@@ -200,7 +196,7 @@ margin-bottom: 25px;
 
 @media screen and (min-width:768px) {
     
-    .unique-section {
+    .unique-secta {
         padding-top: 100px;
         padding-bottom: 100px;
     }
@@ -245,7 +241,7 @@ margin-bottom: 25px;
 }
     @media screen and (min-width:1200px) {
 
-        .unique-section {
+        .unique-secta {
             padding-top: 128px;
             padding-bottom: 128px;
         }
