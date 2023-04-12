@@ -137,8 +137,8 @@
     fill: var(--accent-main-color);
 }
 
-.hero-scroll-link:hover .hero-scroll-down-title,
-.hero-scroll-link:focus .hero-scroll-down-title {
+.hero-scroll-link:hover .hero-button-how-its-made,
+.hero-scroll-link:focus .hero-button-how-its-made {
     color: var(--text-second-color);
 
     transition: background-color var(--animation-duration) var(--animation-function)
