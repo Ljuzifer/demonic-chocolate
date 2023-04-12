@@ -35,6 +35,8 @@
   background-color: var(--background-third-color);
 }
 .products-image {
+  max-width: 230px;
+  max-height: 201px;
   margin: 0 auto;
 }
 
